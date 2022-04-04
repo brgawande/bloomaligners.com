@@ -1,0 +1,206 @@
+.btn2 {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    display: inline-block;
+    padding: 1.3rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 520;
+  
+    border-radius: 0.5rem;
+    border: 0.1rem solid #fff;
+    cursor: pointer;
+    color: #fff;
+    background: none;
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .btn2:hover,
+  .btn2:focus,
+  .btn2:active {
+    color: #fff;
+    color: #000;
+    background-color: rgba(13, 168, 199, 1);
+    border-color: rgba(13, 168, 199, 1);
+    font-weight: 620;
+  }
+  .header2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    background: var(--black);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3%;
+    box-shadow: var(--box-shadow);
+  }
+  .header2 .right2 {
+    display: flex;
+    align-items: center;
+  }
+  .header2 .right2 .navbar2 {
+    padding-left: 2rem;
+  }
+  .header2 .right2 .navbar2 a {
+    padding: 0 0.3rem;
+  }
+  .header2 .logo2 {
+    height: 50px;
+    width: 50px;
+  }
+  .header2 .logo2 img{
+    height: 100%;
+    width: 100%;
+  }
+  .header2 .navbar2 a {
+    font-family: "Karla", sans-serif;
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+  }
+  .header2 .navbar2 a:hover {
+    color: var(--blue);
+  }
+  .header2 .icons2 {
+    font-size: 2.6rem;
+  }
+  .header2 .icons2 i {
+    color: #fff;
+    padding-right: 2rem;
+  }
+  .header2 .icons2 .btn2 {
+    letter-spacing: 0.2rem;
+  }
+  #menu-btn2 {
+    display: none;
+  }
+
+
+
+.header .icons .btn2 {
+    letter-spacing: 0.2rem;
+  }
+
+.treatment{
+    background-color: #fff;
+    color: black;
+   padding-bottom: 5rem;
+    padding-top: 10rem;
+   
+}
+.treatment h2{
+    color: black;
+}
+.treatment .box-container{
+  padding: -1rem 1rem;
+}
+.treatment .box-container .box{
+    width: 85%;
+    margin: 4rem auto;
+    border-radius: .5rem;
+    /* box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.5); */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+}
+.treatment .box-container .box .image{
+    width: 50%;
+    height: 25rem;
+    padding: 2rem 8rem;
+
+}
+.treatment .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.treatment .box-container .box .content{
+    height: 100%;
+    width: 50%;
+    padding: 2rem 8rem;
+}
+.treatment .box-container .box:nth-child(even){
+    flex-flow: row-reverse;
+}
+.treatment .box-container .box .content h3{
+    font-size: 3rem;
+}
+.treatment .box-container .box .content p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2.5rem;
+}
+
+
+/*  */
+@media (max-width:768px){
+  .treatment .box-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header2 {
+    padding: 0.2rem 3%;
+  }
+
+    #menu-btn2 {
+        display: inline-block;
+      }
+      .header2 .navbar2 {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: 0.5rem;
+        background: var(--black);
+      }
+      .header2 .navbar2.active {
+        right: 2rem;
+        transition: 0.3s linear;
+      }
+      .header2 .navbar2 a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+      }
+    .treatment .box-container .box{
+        flex-flow: column;
+        width: 90%;
+        margin: 2rem 0;
+        padding: 1rem 3%;
+    }
+    .treatment .box-container .box:nth-child(even){
+        flex-flow: column;
+    }
+    .treatment .box-container .box .image{
+        width: 100%;
+        padding: 2rem 2rem;
+        
+    }
+    .treatment .box-container .box .content {
+        width: 100%;
+    }
+    .treatment .box-container .box .content h3{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+   
+    .treatment .box-container .box .content{
+       
+        padding: 0rem 0rem;
+    }
+    .treatment .box-container .box .content p{
+        padding: 2rem 0;
+        text-align: center;
+    }
+    
+}
